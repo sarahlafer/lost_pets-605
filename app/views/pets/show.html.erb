@@ -1,0 +1,6 @@
+<h1><%= @pet.name %></h1>
+
+<p><%= @pet.name.capitalize %> is a <%= @pet.species %> and was found on <strong><%= @pet.found_on.strftime("%A, %b %d") %></strong> in <%= @pet.address %>.</p>
+
+<%= link_to "Edit", edit_pet_path(@pet) %>
+<%= link_to "See all pets", pets_path %>
